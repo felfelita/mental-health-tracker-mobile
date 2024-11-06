@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 // TODO: Impor drawer yang sudah dibuat sebelumnya
-import 'package:mental_health_tracker/widgets/left_drawer.dart';
 
 class MoodEntryFormPage extends StatefulWidget {
   const MoodEntryFormPage({super.key});
@@ -27,7 +26,6 @@ class _MoodEntryFormPageState extends State<MoodEntryFormPage> {
         foregroundColor: Colors.white,
       ),
       // TODO: Tambahkan drawer yang sudah dibuat di sini
-
       body: Form(
         key: _formKey,
         child: SingleChildScrollView(
@@ -110,6 +108,7 @@ class _MoodEntryFormPageState extends State<MoodEntryFormPage> {
                 alignment: Alignment.bottomCenter,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
+                  
                   child: ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(
@@ -153,7 +152,7 @@ class _MoodEntryFormPageState extends State<MoodEntryFormPage> {
                 ),
               ),
             ],
-          ),
+          )
         ),
       ),
     );
